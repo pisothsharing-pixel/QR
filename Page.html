@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Futuristic Website</title>
+<link rel="Icon" type="imag/png" href="Anime.png">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0a0f2c, #001133);
+    color: #e0e0e0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 50px;
+    backdrop-filter: blur(8px);
+}
+
+nav h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #9fd4ff;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 70%;
+    padding: 0 30px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 4px 15px rgba(255,255,255,0.15);
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Futuristic Button */
+button {
+    margin-top: 40px;
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #0a122b;
+    background: linear-gradient(90deg, #63e2ff, #b066ff);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    backdrop-filter: blur(4px);
+}
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(99, 226, 255, 0.6),
+                0 4px 12px rgba(176, 102, 255, 0.6);
+}
+
+/* Soft Glow Background Circles */
+.hero::before,
+.hero::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: -1;
+}
+
+.hero::before {
+    width: 600px;
+    height: 600px;
+    background: #3f72ff40;
+    top: -180px;
+    left: -220px;
+}
+
+.hero::after {
+    width: 800px;
+    height: 800px;
+    background: #ff6ed540;
+    bottom: -300px;
+    right: -200px;
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+    <h2>MyWeb</h2>
+    <div>
+        <a href="Page.html">Home</a>
+        <a href="P.html">About</a>
+        <a href="#">Service</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <h1>Futuristic Web Design</h1>
+    <p>Create innovative tools with HTML, CSS & JavaScript</p>
+    <a href="QR.html"><button>Generate QR Code</button></a>
+</div>
+
+</body>
+</html>
